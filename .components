@@ -1,0 +1,9 @@
+---
+:orm: mongoid
+:test: none
+:mock: none
+:script: none
+:renderer: haml
+:stylesheet: none
+:namespace: Demo
+:migration_format: number
