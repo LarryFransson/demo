@@ -1,0 +1,9 @@
+= form_tag url_for(:sessions, :create) do
+  = hidden_field_tag :authenticity_token, :value => env['rack.session'][:csrf]
+  %div
+    = label_tag :email, :caption => "Email Address"
+    = text_field_tag :email
+  %div
+    = submit_tag
+
+    = env['warden'].user.inspect
